@@ -7,6 +7,17 @@ https://github.com/GoogleContainerTools/distroless#examples-with-docker
 
 It works fine with "latest" without debugging, but with "debug", problems arise.
 
+
+# tl; dr;
+
+Use ENTRYPOINT instead of CMD
+
+```
+- CMD ["/app"]
+- ENTRYPOINT ["/app"]
+```
+
+
 # with debug docker tag
 
 ```
